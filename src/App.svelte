@@ -1,7 +1,7 @@
 <script>
-    import { fetchUserById, fetchAllUser } from "./service/user"
-    import { fetchPost } from "./service/post"
-    import { fetchComment } from "./service/comment"
+    import { fetchUserById, fetchAllUser } from "./service/user.js"
+    import { fetchPost } from "./service/post.js"
+    import { fetchComment } from "./service/comment.js"
     import ProfileCard from "./lib/ProfileCard.svelte"
     import PostContainer from "./lib/PostContainer.svelte"
     let userId = $state(1)
