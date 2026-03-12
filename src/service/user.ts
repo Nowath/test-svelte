@@ -6,7 +6,7 @@ export const fetchUserById = async (userId) => {
     return result.json();
 }
 
-export const fetchAllUser = async () => {
+export async function fetchAllUser(){
     const result = await fetch(`https://jsonplaceholder.typicode.com/users`);
     if(!result.ok){
         throw new Error("Can't Fetch");
